@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolMart - Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                ❄️ CoolMart AC Store
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="control.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="modes.html" class="nav-link">Categories</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Product Detail</a></li>
+                <li class="nav-item"><a href="energy.html" class="nav-link active">Cart</a></li>
+                <li class="nav-item"><a href="settings.html" class="nav-link">Checkout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <div class="page-header">
+                <h1>Shopping Cart</h1>
+                <p>Review your premium air conditioner selections</p>
+            </div>
+
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="item-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+                        <div class="item-details">
+                            <h4>ProCool Elite 18K BTU</h4>
+                            <p>WiFi Smart Inverter Split AC</p>
+                            <div class="quantity-control">
+                                <button class="qty-btn">-</button>
+                                <span class="qty">1</span>
+                                <button class="qty-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="item-price">$899</div>
+                        <button class="remove-item">×</button>
+                    </div>
+                    <div class="cart-item">
+                        <div class="item-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"></div>
+                        <div class="item-details">
+                            <h4>EcoFrost Window 12K</h4>
+                            <p>Energy Star Window AC</p>
+                            <div class="quantity-control">
+                                <button class="qty-btn">-</button>
+                                <span class="qty">2</span>
+                                <button class="qty-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="item-price">$798</div>
+                        <button class="remove-item">×</button>
+                    </div>
+                </div>
+
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal (3 items):</span>
+                        <span id="cart-subtotal">$1,697</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span>FREE</span>
+                    </div>
+                    <div class="summary-row discount">
+                        <span>Discount:</span>
+                        <span>-$150</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="cart-total">$1,547</span>
+                    </div>
+                    <button class="proceed-checkout large">Proceed to Checkout →</button>
+                    <div class="payment-methods">
+                        <span>💳 Visa/Mastercard</span>
+                        <span>💰 PayPal</span>
+                        <span>⏰ Buy Now Pay Later</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="energy.js"></script>
+</body>
+</html>

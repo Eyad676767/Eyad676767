@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart AC Control - Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                ❄️ CoolMart AC Store
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Dashboard</a></li>
+                <li class="nav-item"><a href="control.html" class="nav-link active">Control</a></li>
+                <li class="nav-item"><a href="modes.html" class="nav-link">Modes</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="energy.html" class="nav-link">Energy</a></li>
+                <li class="nav-item"><a href="settings.html" class="nav-link">Settings</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <div class="control-header">
+                <h1>All Products</h1>
+                <p>Browse our premium air conditioner collection</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card bestseller">
+                    <div class="product-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+                    <div class="product-badge">Bestseller</div>
+                    <h4>ProCool Elite 18K BTU</h4>
+                    <div class="rating">★★★★★ 4.9 (1,278)</div>
+                    <div class="features">
+                        WiFi • Inverter • Gold Fin • 19dB
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$899</span>
+                        <span class="old-price">$1,199</span>
+                    </div>
+                    <button class="add-to-cart-btn" data-product-id="1">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"></div>
+                    <h4>EcoFrost Window 12K</h4>
+                    <div class="rating">★★★★☆ 4.7 (892)</div>
+                    <div class="product-price">
+                        <span class="current-price">$399</span>
+                        <span class="old-price">$499</span>
+                    </div>
+                    <button class="add-to-cart-btn" data-product-id="2">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="quick-controls">
+                <h2>Quick Actions</h2>
+                <div class="quick-buttons">
+                    <button class="quick-btn sleep-mode">💤 Sleep Mode</button>
+                    <button class="quick-btn eco-mode">🌿 Eco Mode</button>
+                    <button class="quick-btn turbo">⚡ Turbo Cool</button>
+                    <button class="quick-btn auto">🤖 Auto</button>
+                </div>
+            </div>
+
+            <div class="control-visual">
+                <div class="ac-visual-large">
+                    <div class="ac-unit-big">
+                        <div class="ac-display-large">
+                            <div class="display-glow"></div>
+                            <div class="display-temp"><span id="visual-temp">24</span>°</div>
+                            <div class="display-mode" id="visual-mode">AUTO</div>
+                        </div>
+                        <div class="ac-body-large">
+                            <div class="airflow-visual">
+                                <div class="air-particle"></div>
+                                <div class="air-particle d1"></div>
+                                <div class="air-particle d2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="control.js"></script>
+</body>
+</html>

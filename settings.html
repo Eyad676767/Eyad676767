@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolMart - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                ❄️ CoolMart AC Store
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="control.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="modes.html" class="nav-link">Categories</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Detail</a></li>
+                <li class="nav-item"><a href="energy.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="settings.html" class="nav-link active">Checkout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <div class="page-header">
+                <h1>Secure Checkout</h1>
+                <p>Almost done! Complete your premium AC purchase</p>
+            </div>
+
+            <div class="checkout-container" style="margin-bottom: 4rem;">
+                <div class="checkout-stepper">
+                    <div class="step active">
+                        <div class="step-circle">1</div>
+                        <span>Shipping</span>
+                    </div>
+                    <div class="step active">
+                        <div class="step-circle">2</div>
+                        <span>Payment</span>
+                    </div>
+                    <div class="step">
+                        <div class="step-circle">3</div>
+                        <span>Complete</span>
+                    </div>
+                </div>
+
+                <div class="checkout-content">
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-item">
+                            <span>ProCool Elite 18K ×1</span>
+                            <span>$899</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>EcoFrost Window 12K ×2</span>
+                            <span>$798</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <span id="live-total">$1,697</span>
+                        </div>
+                        <div class="promo-code" style="margin-bottom: 2rem;">
+                            <input type="text" class="form-glow" placeholder="Promo code">
+                            <button class="ghost-btn">Apply</button>
+                        </div>
+                        <div class="trust-badge fade-in-up">
+                            🔒 256-bit SSL • ✅ $0 Tax • 🚚 Free Shipping
+                        </div>
+                    </div>
+
+                    <div class="checkout-form form-glow">
+                        <div class="form-section">
+                            <h3>Shipping Address</h3>
+                            <div class="form-row">
+                                <input type="text" class="form-glow" placeholder="First Name">
+                                <input type="text" class="form-glow" placeholder="Last Name">
+                            </div>
+                            <input type="text" class="form-glow" placeholder="Street Address" list="address-suggestions">
+                            <datalist id="address-suggestions">
+                                <option value="123 Cool St, New York, NY 10001">
+                                <option value="456 Chill Ave, Los Angeles, CA 90210">
+                                <option value="789 Breeze Blvd, Miami, FL 33139">
+                            </datalist>
+                            <input type="text" class="form-glow" placeholder="Apt/Suite (Optional)">
+                            <div class="form-row">
+                                <input type="text" class="form-glow" placeholder="City">
+                                <select class="form-glow">
+                                    <option>ZIP Code</option>
+                                    <option>10001</option>
+                                    <option>90210</option>
+                                    <option>33139</option>
+                                </select>
+                            </div>
+                            <input type="tel" class="form-glow" placeholder="Phone">
+                            <div class="delivery-options">
+                                <label><input type="radio" name="delivery" checked> Standard (3-5 days) <span class="ghost-btn">FREE</span></label>
+                                <label><input type="radio" name="delivery"> Express (1-2 days) <span class="outline-btn">$29</span></label>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Payment Method</h3>
+                            <div class="payment-methods">
+                                <div class="payment-option active">
+                                    <div class="payment-icon icon-btn">💳</div>
+                                    <span>Credit/Debit Card</span>
+                                </div>
+                                <div class="payment-option">
+                                    <div class="payment-icon icon-btn">💰</div>
+                                    <span>PayPal</span>
+                                </div>
+                                <div class="payment-option">
+                                    <div class="payment-icon icon-btn">⏰</div>
+                                    <span>Buy Now Pay Later</span>
+                                </div>
+                            </div>
+                            <div class="card-form">
+                                <input type="text" class="form-glow" placeholder="•••• •••• •••• ••••">
+                                <div class="form-row">
+                                    <input type="text" class="form-glow" placeholder="MM/YY">
+                                    <input type="text" class="form-glow" placeholder="CVV">
+                                </div>
+                                <input type="text" class="form-glow" placeholder="Name on Card">
+                            </div>
+                        </div>
+
+                        <div class="checkout-actions">
+                            <button class="back-btn outline-btn">← Back to Cart</button>
+                            <button class="place-order-btn neon-btn large">
+                                Place Secure Order $1,697
+                                <div class="security-badges">
+                                    🔒 SSL Secure • 📱 Mobile Pay • ✅ Verified
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="settings.js"></script>
+</body>
+</html>

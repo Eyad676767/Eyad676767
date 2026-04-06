@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart AC Control - Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                ❄️ CoolMart AC Store
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Dashboard</a></li>
+                <li class="nav-item"><a href="control.html" class="nav-link">Control</a></li>
+                <li class="nav-item"><a href="modes.html" class="nav-link">Modes</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link active">Schedule</a></li>
+                <li class="nav-item"><a href="energy.html" class="nav-link">Energy</a></li>
+                <li class="nav-item"><a href="settings.html" class="nav-link">Settings</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <div class="page-header">
+                <h1>ProCool Elite 18K - Product Detail</h1>
+                <p>WiFi Smart Inverter Split AC • Bestseller 2024</p>
+            </div>
+
+            <div class="product-actions" style="margin-bottom: 4rem;">
+                <div class="price-section">
+                    <div class="big-price">$899 <span class="save-badge">Save $300</span></div>
+                    <div class="rating-large" style="margin-bottom: 2rem;">★★★★★ 4.9 (1,278 Reviews)</div>
+                </div>
+                <div class="buy-buttons">
+                    <button class="buy-now-btn" data-product-id="1" style="margin-bottom: 1rem;">Buy Now - Pay Later</button>
+                    <button class="add-cart-btn" data-product-id="1">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-gallery">
+<div class="gallery-main">
+                    <img src="https://images.unsplash.com/photo-1581154837404-ed18e0053589?w=800&h=600&fit=crop" alt="ProCool Elite" class="product-main-image">
+                    <div class="video-play">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1" frameborder="0"></iframe>
+                    </div>
+                    <div class="zoom-lens"></div>
+                </div>
+                <div class="gallery-thumbs">
+                    <div class="thumb active" style="background: #667eea"></div>
+                    <div class="thumb" style="background: #764ba2"></div>
+                    <div class="thumb" style="background: #f093fb"></div>
+                    <div class="thumb" style="background: #00d4ff"></div>
+                </div>
+            </div>
+
+            <div class="schedule-calendar">
+                <h2>Today's Schedule</h2>
+                <div class="calendar-visual">
+                    <div class="clock-face">
+                        <canvas id="scheduleCanvas" width="300" height="300"></canvas>
+                    </div>
+                    <div class="next-event">
+                        <h3>Next: Sleep Mode</h3>
+                        <p>in 3h 45m (22:00)</p>
+                        <div class="countdown">
+                            <span>3h</span>
+                            <span>45m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEW: Product Options & Related -->
+            <div class="product-options fade-in-up">
+                <h3>Choose Options</h3>
+                <div class="pill-selector">
+                    <div class="pill-item active" data-size="18k">18K BTU</div>
+                    <div class="pill-item" data-size="24k">24K BTU</div>
+                    <div class="pill-item" data-size="36k">36K BTU</div>
+                </div>
+                <div class="pill-selector">
+                    <div class="pill-item" style="background: #667eea; color: white;" data-color="blue">Blue</div>
+                    <div class="pill-item" style="background: #f093fb; color: white;" data-color="purple">Purple</div>
+                    <div class="pill-item" style="background: #00d4ff; color: white;" data-color="cyan">Cyan</div>
+                </div>
+                <span class="warranty-badge">3-Year Warranty + Free Install</span>
+            </div>
+
+            <div class="related-products fade-in-up">
+                <h3>Customers Also Bought</h3>
+                <div class="carousel-container">
+                    <div class="carousel-track" id="relatedCarousel">
+                    <div class="carousel-slide">
+                            <div class="product-card" style="height: 300px;">
+                                <div class="product-image" style="background: linear-gradient(45deg, #ff6b6b, #ffa500);"></div>
+                                <h4>EcoFrost 12K</h4>
+                                <div class="current-price">$599</div>
+                                <button class="add-to-cart-btn ghost-btn" data-action="quick-add" data-product-id="2">Quick Add</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="product-card" style="height: 300px;">
+                                <div class="product-image" style="background: linear-gradient(45deg, #4ecdc4, #44a08d);"></div>
+                                <h4>ChillMax Window</h4>
+                                <div class="current-price">$399</div>
+                                <button class="add-to-cart-btn outline-btn">Add</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="product-card" style="height: 300px;">
+                                <div class="product-image" style="background: linear-gradient(45deg, #667eea, #764ba2);"></div>
+                                <h4>SmartRemote Pro</h4>
+                                <div class="current-price">$79</div>
+                                <button class="icon-btn">🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-nav prev">‹</button>
+                    <button class="carousel-nav next">›</button>
+                </div>
+            </div>
+
+            <!-- NEW: Sticky Buy Bar -->
+            <div class="sticky-buy fade-in-up">
+                <div class="big-price">$899 <span class="save-badge neon-btn">Save $300!</span></div>
+                <div class="buy-buttons">
+                    <button class="buy-now-btn">Buy Now</button>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="schedule.js"></script>
+</body>
+</html>

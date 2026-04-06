@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart AC Control - Modes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                ❄️ CoolMart AC Store
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Dashboard</a></li>
+                <li class="nav-item"><a href="control.html" class="nav-link">Control</a></li>
+                <li class="nav-item"><a href="modes.html" class="nav-link active">Modes</a></li>
+                <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item"><a href="energy.html" class="nav-link">Energy</a></li>
+                <li class="nav-item"><a href="settings.html" class="nav-link">Settings</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <div class="page-header">
+                <h1>AC Categories</h1>
+                <p>Window • Split • Portable • Smart Inverter</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card window active">
+                    <div class="category-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"></div>
+                    <h3>Window AC</h3>
+                    <p>12K-24K BTU • Easy Install • $299-$599</p>
+                    <div class="category-stats">
+                        15 Models • 4.8⭐ Average
+                    </div>
+                </div>
+                <div class="category-card split">
+                    <div class="category-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+                    <h3>Split AC</h3>
+                    <p>18K-48K BTU • WiFi • Inverter • $899-$2,499</p>
+                    <div class="category-stats">
+                        25 Models • 4.9⭐ Average
+                    </div>
+                </div>
+                <div class="category-card portable">
+                    <div class="category-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"></div>
+                    <h3>Portable AC</h3>
+                    <p>8K-14K BTU • Moveable • $249-$499</p>
+                    <div class="category-stats">
+                        8 Models • 4.6⭐ Average
+                    </div>
+                </div>
+                <div class="category-card smart">
+                    <div class="category-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"></div>
+                    <h3>Smart AC</h3>
+                    <p>WiFi • App Control • Voice • $699-$1,999</p>
+                    <div class="category-stats">
+                        12 Models • 4.9⭐ Average
+                    </div>
+                </div>
+            </div>
+
+            <div class="mode-details">
+                <h2>Current Mode: <span id="current-mode-display">Auto</span></h2>
+                <div class="mode-visualization">
+                    <canvas id="modeCanvas" width="400" height="300"></canvas>
+                </div>
+                <div class="fan-speeds">
+                    <h3>Fan Speed</h3>
+                    <div class="fan-speed-selector">
+                        <button class="fan-btn low" data-speed="low">Low 🌬️</button>
+                        <button class="fan-btn medium" data-speed="medium">Medium 💨</button>
+                        <button class="fan-btn high active" data-speed="high">High 🌪️</button>
+                        <button class="fan-btn auto" data-speed="auto">Auto 🔄</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="modes.js"></script>
+</body>
+</html>
